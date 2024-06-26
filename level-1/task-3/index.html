@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculater</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="calculater">
+        <div class="container">
+            <div class="cal-cont">
+                <table>
+                    <tr>
+                        <th colspan="3" ><input type="text" readonly name="result" id="result" class="result" style="background-color:antiquewhite;"></th>
+                        <th><input type="button" value="C" onclick="result.value=''"></th>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="7" onclick="oNdisplay(7)" /></td>
+                        <td><input type="button" value="8" onclick="oNdisplay(8)" /></td>
+                        <td><input type="button" value="9" onclick="oNdisplay(9)" /></td>
+                        <td><input type="button" value="*" onclick="oNdisplay('*')"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="4" onclick="oNdisplay(4)" /></td>
+                        <td><input type="button" value="5" onclick="oNdisplay(5)" /></td>
+                        <td><input type="button" value="6" onclick="oNdisplay(6)" /></td>
+                        <td><input type="button" value="-" onclick="oNdisplay('-')" /></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="1" onclick="oNdisplay(1)" /></td>
+                        <td><input type="button" value="2" onclick="oNdisplay(2)" /></td>
+                        <td><input type="button" value="3" onclick="oNdisplay(3)" /></td>
+                        <td><input type="button" value="+" onclick="oNdisplay('+')" /></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="0" onclick="oNdisplay(0)" /></td>
+                        <td><input type="button" value="." onclick="oNdisplay('.')"/></td>
+                        <td><input type="button" value="=" onclick="calculate(result.value)" /></td>
+                        <td><input type="button" value="/" onclick="oNdisplay('/')"/></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,245 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.special-heading{
+    color: #ffffffa9;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+    margin: 0;
+    margin-bottom: 15px;
+}
+.special-heading2{
+    color:black;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+    margin: 0;
+    margin-bottom: 15px;
+}
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+}
+.header{
+    background-color: red;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+header .logo h3{
+    font-size: 25px;
+    letter-spacing: 3px;
+    font-weight: 800;
+}
+header .links{
+    align-items: center;
+    display: flex;
+}
+header .links a{
+    margin-left: 5px;
+    margin-right: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.5s;
+    color:black;
+}
+header .links a:hover{
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.about{
+    background-image: linear-gradient(red,black 20%);
+    padding-top: 150px;
+    padding-bottom: 30px;
+}
+.about .about-cont{
+    display:flex;
+    justify-content: space-between;
+}
+@media screen and (min-width:0px) and (max-width:770px) {
+    .about .about-cont{
+        display:block;
+        justify-content: space-between;
+    }
+}
+.about .about-cont .info{
+    color: rgb(255, 255, 255);
+    line-height: 1.6;
+    display: flex;
+}
+.about .about-cont .info p{
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    min-width: 400px;
+
+}
+.about .about-cont .img-div{
+    display: flex;
+    justify-content: center;
+}
+.about .about-cont img{
+    border-radius: 50%;
+    width: 350px;
+}
+.b-to-g{
+    background-image: linear-gradient(black,gray 80%);
+    height: 100px;
+}
+.skills{
+    background-color: gray;
+}
+.skills .skill-cont{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 10px;
+    margin-top: 10px;
+}
+.skills .skill-cont .card .box{
+    display: flex;
+    justify-content: center;
+}
+.skills .skill-cont .card .box img{
+    width: 200px;
+    max-width: 100%;
+}
+
+.skills .skill-cont .card .info h3{
+    text-align: center;
+    font-size: 30px;
+}
+.g-to-w{
+    background-image: linear-gradient(gray,white);
+    height: 100px;
+}
+.prot-cont{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(384px, 1fr));
+    grid-gap: 10px;
+    margin-top: 10px;
+}
+.prot-cont .card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.prot-cont .card h2{
+    font-size: 40px;
+}
+.prot-cont .card img{
+    width: 600px;
+    max-width: 100%;
+    transition: 0.3s;
+}
+.prot-cont .card img:hover{
+    transform: scale(1.1);
+}
+.w-to-r{
+    background-color: white;
+    height: 40px;
+}
+.resume{
+    background-color: white;
+    height: 20vh;
+}
+.resume .res-cont h1{
+    margin: 0;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.resume .res-cont .btn{
+    display: flex;
+    justify-content: center;
+}
+.resume .res-cont .btn a{
+  background-color: #000000;
+  color: white;
+  padding: 20px 75px;
+  text-align: center;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.3s;
+}
+.resume .res-cont .btn a:hover{
+    background-color: rgb(146, 146, 146);
+    color: black;
+}
+.r-to-b{
+    background-image: linear-gradient(white,black 70%);
+    height: 60px;
+}
+.contact{
+    background-color: #000000;
+    height: 20vh;
+}
+.contact .container{
+    display: flex;
+    justify-content: center;
+}
+.contact .cont-cont{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    max-width: 400px;
+}
+.cont-cont img{
+    width: 50px;
+}
+.cont-cont p{
+    padding-left: 10px;
+    padding-right: 10px;
+    display: block;
+}
+.cont-cont p a{
+    text-decoration: none;
+    color: white;
+}
+.cont-cont p a:hover{
+    text-decoration:underline;
+}
+.cont-cont p .a{
+    width: 100%;
+    color: aliceblue;
+    height: 1px;
+}
+.b-to-r{
+    background-image: linear-gradient(black,red 70%);
+    height: 60px;   
+}
+footer{
+    background-color: red;
+}
+footer p{
+    margin: 0;
+    padding-bottom: 7px;
+    font-size: 17px;
+    font-weight: 600;
+}
